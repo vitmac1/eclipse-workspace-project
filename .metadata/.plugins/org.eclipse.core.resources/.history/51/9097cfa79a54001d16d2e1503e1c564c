@@ -1,0 +1,15 @@
+package br.com.ciss.exerciciossb.controllers;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProdutoController {
+
+	@PostMapping
+	public Produto novoProduto(String nome) {
+		Produto produto = new Produto(nome);
+		
+		return produto;
+	}
+}

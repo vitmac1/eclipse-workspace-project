@@ -1,0 +1,8 @@
+package modelo.heranca;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Aluno {
+
+}

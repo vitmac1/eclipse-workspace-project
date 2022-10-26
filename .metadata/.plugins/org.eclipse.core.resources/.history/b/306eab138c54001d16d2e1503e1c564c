@@ -1,0 +1,12 @@
+package br.com.ciss.exerciciossb.models;
+
+public class Calculadora {
+	
+	private int valor1;
+	private int valor2;
+	
+	puclic Calculadora(int valor1, int valor2) {
+		this.valor1 = valor1;
+		this.valor2 = valor2;
+	}
+}

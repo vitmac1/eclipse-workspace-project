@@ -1,0 +1,15 @@
+package layout;
+
+import javafx.scene.layout.BorderPane;
+
+public class TesteBorderPane extends BorderPane{
+
+	public TesteBorderPane() {
+		
+		Caixa c1 = new Caixa().comTexto("Topo");
+		setTop(c1);
+		
+		Caixa c2 = new Caixa().comTexto("Topo");
+		setTop(c2);
+	}
+}

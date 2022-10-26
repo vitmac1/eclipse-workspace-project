@@ -1,0 +1,9 @@
+.conteudo{ 
+	-fx-background-color: black; 
+	-fx-font-family: Silkscreen;
+}
+
+.numero{
+	-fx-text-fill: #fff;
+	-fx-font-size: 22px;
+}

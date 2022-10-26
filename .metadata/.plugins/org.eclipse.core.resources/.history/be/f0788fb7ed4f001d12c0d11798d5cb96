@@ -1,0 +1,11 @@
+module app.calculo{
+	requires transitive app.logging;
+	exports br.com.ciss.app.calculo
+		to app.financeiro;
+	
+	
+	exports br.com.ciss.app.calculo.interno
+		to app.financeiro;
+	
+	opens br.com.ciss.app.calculo to app.logging, app.financeiro;
+}

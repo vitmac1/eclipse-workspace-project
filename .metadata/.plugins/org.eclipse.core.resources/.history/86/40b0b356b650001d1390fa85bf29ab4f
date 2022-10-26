@@ -1,0 +1,19 @@
+package layout;
+
+import javafx.geometry.Pos;
+import javafx.scene.layout.HBox;
+
+public class Caixa extends HBox{
+
+	private String[] cores = 
+	{
+		"#c33c5e", "#39aac6", "#28d79a",
+		"#fb750e", "#6657a8", "#f9060e"
+	};
+	
+	public Caixa() {}
+	
+	public Caixa(int largura, int altura) {
+		setAlignment(Pos.CENTER);
+	}
+}

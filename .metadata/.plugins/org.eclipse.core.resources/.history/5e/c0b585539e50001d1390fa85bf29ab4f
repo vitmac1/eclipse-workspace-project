@@ -1,0 +1,26 @@
+package basico;
+
+import java.awt.Button;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class PrimeiroFX extends Application{
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		
+		VBox box = new VBox();
+		
+		Button botaoA = new Button("A");
+		Button botaoB = new Button("B");
+		Button botaoC = new Button("C");
+		
+		
+		primaryStage.show();
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

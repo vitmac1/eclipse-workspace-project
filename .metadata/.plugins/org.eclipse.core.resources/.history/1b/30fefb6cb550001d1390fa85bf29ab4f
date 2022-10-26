@@ -1,0 +1,14 @@
+package layout;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class AppLayout extends Application{
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		Janela = primaryStage;
+		janela.setTitle("Gerenciador de Layout");
+		primaryStage.show();
+	}
+}

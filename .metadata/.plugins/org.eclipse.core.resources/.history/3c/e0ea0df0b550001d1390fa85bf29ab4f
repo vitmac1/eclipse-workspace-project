@@ -1,0 +1,10 @@
+package layout;
+
+import javafx.scene.layout.HBox;
+
+public class Caixa extends HBox{
+
+	public Caixa() {
+		
+	}
+}

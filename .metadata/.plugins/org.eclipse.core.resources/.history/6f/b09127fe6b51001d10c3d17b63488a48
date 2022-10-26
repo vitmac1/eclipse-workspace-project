@@ -1,0 +1,25 @@
+package fxml;
+
+import java.net.URL;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+
+public class AppFXML extends Application{
+
+	private Stage janela;
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		URL arquivoFXML = getClass().getResource("/fxml/Login.fxml");
+		FXMLLoader.load(arquivo);
+		
+		
+		janela = primaryStage;
+		
+		janela.show();
+	}
+	
+	public static void main(String[] args) { launch(args); }
+}

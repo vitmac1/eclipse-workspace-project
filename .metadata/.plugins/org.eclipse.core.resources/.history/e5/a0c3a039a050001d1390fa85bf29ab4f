@@ -1,0 +1,29 @@
+package basico;
+
+
+
+
+import javafx.application.Application;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class Contador extends Application{
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		VBox principal = new VBox();
+		
+		Label labelTitulo = new Label("Contador");
+		Label labelNumero = new Label("0");
+		
+		Button botaoDecremento = new Button("-");
+		Button botaoIncremento = new Button("+");
+		
+		primaryStage.show();
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

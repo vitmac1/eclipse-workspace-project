@@ -1,0 +1,16 @@
+package layout;
+
+import javafx.scene.layout.TilePane;
+
+public class TesteTilePane extends TilePane{
+
+	public TesteTilePane() {
+		
+		Caixa c1 = new Caixa();
+		Caixa c2 = new Caixa();
+		Caixa c3 = new Caixa();
+		Caixa c4 = new Caixa();
+		Caixa c5 = new Caixa();
+		Caixa c6 = new Caixa();
+	}
+}

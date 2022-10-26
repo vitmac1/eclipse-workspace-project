@@ -1,0 +1,6 @@
+.conteudo{ 
+	-fx-background-color: black; 
+	-fx-font-family: Silkscreen;
+	-fx-text-fill: #fff;
+
+}

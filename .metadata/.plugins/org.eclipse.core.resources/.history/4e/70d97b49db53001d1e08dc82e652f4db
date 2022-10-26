@@ -1,0 +1,5 @@
+package br.com.ciss.exerciciossb.models;
+
+public class Cliente {
+
+}

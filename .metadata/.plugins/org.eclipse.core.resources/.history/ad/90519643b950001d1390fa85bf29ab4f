@@ -1,0 +1,8 @@
+package layout;
+
+import javafx.scene.layout.AnchorPane;
+
+public class TesteAnchorPane extends AnchorPane{
+
+	
+}

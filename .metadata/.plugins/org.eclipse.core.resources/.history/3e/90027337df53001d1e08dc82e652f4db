@@ -1,0 +1,26 @@
+package br.com.ciss.exerciciossb.controllers;
+
+public class MetodosHttpController {
+
+	public String get() {
+		return "Requisição GET";
+	}
+	
+	public String post() {
+		return "Requisião POST";
+	}
+	
+	public String put() {
+		return "Requisição PUT";
+	}
+	
+	public String patch() {
+		return "Requisião PATCH";
+	}
+	
+	public String delete() {
+		return "Requisição DELETE";
+	}
+	
+
+}

@@ -1,0 +1,11 @@
+package br.com.ciss.app.financeiro;
+
+import br.com.ciss.app.calculo.Calculadora;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Calculadora calculadora = new Calculadora(); 
+	}
+}

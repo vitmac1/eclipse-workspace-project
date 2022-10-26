@@ -1,0 +1,15 @@
+.conteudo{ 
+	-fx-background-color: black; 
+	-fx-font-family: Silkscreen;
+}
+
+.titulo{
+	-fx-text-fill: #48b2ee;
+	-fx-font-fill: 36px;
+}
+
+
+.numero{
+	-fx-text-fill: #fff;
+	-fx-font-size: 22px;
+}

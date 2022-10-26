@@ -1,0 +1,7 @@
+package layout;
+
+import javafx.application.Application;
+
+public class AppLayout extends Application{
+
+}

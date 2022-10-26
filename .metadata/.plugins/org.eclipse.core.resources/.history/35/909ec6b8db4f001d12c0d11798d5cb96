@@ -1,0 +1,22 @@
+package modelo.heranca;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Aluno {
+
+	@Id
+	private Long id;
+	
+	private long matricula;
+	
+	private String nome;
+	
+	public Aluno() {}
+
+	public Aluno(String nome, ) {
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+package br.com.ciss.exerciciossb.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.ciss.exerciciossb.models.Calculadora;
+import br.com.ciss.exerciciossb.models.Cliente;
+
+@RestController
+@RequestMapping(path = "/Calculadora")
+public class CalculadoraController {
+	
+	//Calculadora/somar/10/20
+	
+	//Calculadora/Subtrair?a=100&b=39
+	
+	Calculadora calculdora = new Calculadora();
+	
+	@GetMapping(path = "/Somar")
+	public Calculadora Somar() {
+		return calculdora.Somar(10, 20);
+	}
+	
+	@GetMapping(path = "/qualquer2")
+	public Cliente obterCliente() {
+		return new Cliente(28, "Pedro", "123.456.789-00");
+	}
+	
+	@GetMapping("/{id}")
+	public Cliente obterClientePorId1(@PathVariable int id) {
+		return new Cliente(id, "Maria", "987.654.321-00");
+	}
+	
+	@GetMapping
+	public Cliente obterClienteporId2(
+			@RequestParam(name = "id", defaultValue = "1") int id) {
+		return new Cliente(id, "Joao Augusto", "111.222.333-44");
+	}
+}

@@ -1,0 +1,7 @@
+package basico;
+
+import javafx.application.Application;
+
+public class PrimeiroFX extends Application{
+
+}

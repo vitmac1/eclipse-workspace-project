@@ -1,0 +1,14 @@
+package fxml;
+
+import javafx.fxml.FXML;
+
+public class LoginControlador {
+
+	@FXML
+	private TextField campoEmail;
+	private PasswordField campoSenha;
+	
+	public void entrar() {
+		System.out.println("Entrar...");
+	}
+}

@@ -1,0 +1,24 @@
+.conteudo{ 
+	-fx-background-color: black; 
+	-fx-font-family: Silkscreen;
+}
+
+.titulo{
+	-fx-text-fill: #48b2ee;
+	-fx-font-size: 36px;
+}
+
+
+.numero{
+	-fx-text-fill: #fff;
+	-fx-font-size: 22px;
+}
+
+.botoes{
+	-fx-background-color: #fff;
+	-fx-text-fill: #fff;
+	-fx-font-size: #fff;
+	-fx-min-width: #fff;
+	-fx-min-height: #fff;
+	-fx-background-radius: 30px;
+}

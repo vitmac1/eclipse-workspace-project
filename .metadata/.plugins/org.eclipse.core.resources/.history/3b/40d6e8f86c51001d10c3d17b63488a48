@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1">
+	
+	<Label text="Seja Bem Vindo"
+		GridPane.ColumnIndex="0" GridPane.RowIndex="0"></Label>
+	<Label text="E-mail: "></Label>
+	<Label text="Senha: "></Label>
+	
+	<Button text="Entrar"></Button>
+	
+	
+</GridPane>
+

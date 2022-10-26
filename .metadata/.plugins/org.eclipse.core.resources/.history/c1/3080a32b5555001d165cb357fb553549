@@ -1,0 +1,11 @@
+package br.com.ciss.exerciciossb.model.repositories;
+
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+import br.com.ciss.exerciciossb.model.entities.Produto;
+
+public interface ProdutoRepository 
+	extends PagingAndSortingRepository<Produto, Integer>{
+
+	public Iterable<Produto> findByNomeContaining(String parteNome);
+}

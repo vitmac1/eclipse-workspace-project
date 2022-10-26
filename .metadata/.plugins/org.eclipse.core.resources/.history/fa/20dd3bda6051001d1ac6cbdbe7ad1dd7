@@ -1,0 +1,10 @@
+package layout;
+
+import javafx.scene.layout.BorderPane;
+
+public class TesteBorderPane extends BorderPane{
+
+	public TesteBorderPane() {
+		
+	}
+}

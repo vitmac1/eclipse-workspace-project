@@ -1,0 +1,12 @@
+package layout;
+
+import javafx.scene.layout.BorderPane;
+
+public class TesteBorderPane extends BorderPane{
+
+	public TesteBorderPane() {
+		
+		Caixa c1 = new Caixa("Topo");
+		Caixa c2 = new Caixa("Esquerda");
+	}
+}

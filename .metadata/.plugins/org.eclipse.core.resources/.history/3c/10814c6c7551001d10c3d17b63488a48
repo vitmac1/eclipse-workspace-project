@@ -1,0 +1,13 @@
+package fxml;
+
+import java.awt.TextField;
+
+public class LoginControlador {
+
+	private TextField campoEmail;
+	private PasswordField campoSenha;
+	
+	public void entrar() {
+		System.out.println("Entrar...");
+	}
+}

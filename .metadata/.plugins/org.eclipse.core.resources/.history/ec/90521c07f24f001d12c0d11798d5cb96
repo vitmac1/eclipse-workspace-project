@@ -1,0 +1,35 @@
+package br.com.ciss.app.financeiro;
+
+import java.util.ServiceLoader;
+
+import br.com.ciss.app.Calculadora;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Calculadora calc = ServiceLoader
+				.load(Calculadora.class)
+				.findFirst()
+				.get();
+		System.out.println(calc.soma(1, 2, 3));
+		
+//		OperacoesAritmeticas op = new OperacoesAritmeticas();
+//		System.out.println(op.soma(1,2,3));
+//	
+		try {
+			Field fieldId = calc.class.getDeclaredFields()[0];
+			fieldId.setAccessible(true);
+			fieldId.set(calc, "def");
+			System.out.println(fieldId.get(calc));
+			fieldId.setAccessible(false);
+			
+			System.out.println(calc.getId());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(CalculadoraImpl.class.getName());
+	}
+}
+ 

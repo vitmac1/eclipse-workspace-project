@@ -1,0 +1,55 @@
+package modelo.umpramuitos;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+public class Pedido {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	@Column(nullable = false)
+	private Date data;
+	//(.....ToMany -> LAZY)
+	@OneToMany(mappedBy = "pedido", fetch = FetchType.LAZY)// Esse é o valor default de Fetch
+	private List<ItemPedido> items;
+	
+	public Pedido() {}
+
+	public Pedido(Date data) {
+		super();
+		this.data = data; 
+	}
+	
+	public long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	public Date getData() {
+		return data;
+	}
+	
+	public void setData(Date data) {
+		this.data = data;
+	}
+	
+	public List<ItemPedido> getItens(){
+		return items;
+	}
+	
+	public void setItens(List<ItemPedido> items) {
+		this.items = items;
+	}
+}

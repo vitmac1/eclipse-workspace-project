@@ -1,0 +1,12 @@
+package teste.heranca;
+
+import infra.DAO;
+import modelo.heranca.Aluno;
+
+public class NovoAluno {
+
+	public static void main(String[] args) {
+		
+		DAO<Aluno> alunoDAO = new DAO<>();
+	}
+}
